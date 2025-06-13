@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🌦️ Advanced Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Weather Forecast</h1>
+    <div class="weather-card">
+      <form id="search-form">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city name"
+          autocomplete="off"
+        />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+
+      <div class="location" id="location">Detecting location...</div>
+
+      <div class="weather-icon">
+        <img id="icon" src="" alt="Weather Icon" />
+      </div>
+
+      <div class="temperature" id="temperature">--°C</div>
+      <div class="description" id="description">--</div>
+
+      <div class="details">
+        <p><i class="fas fa-tint"></i> Humidity: <span id="humidity">--</span>%</p>
+        <p><i class="fas fa-wind"></i> Wind: <span id="wind">--</span> km/h</p>
+      </div>
+
+      <div id="error" class="error-message"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
